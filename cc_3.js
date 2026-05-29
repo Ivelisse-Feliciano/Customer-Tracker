@@ -25,9 +25,9 @@ let customers = [
   }
 ];
 
-// let OriginalCustomers = customers;
+let OriginalCustomers = [...customers];
 console.log("Original Customers:");
-console.log(Customers);
+console.log(customers);
 
 // Add a new customer
 let newCustomer = {
