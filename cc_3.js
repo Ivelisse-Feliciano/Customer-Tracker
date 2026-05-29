@@ -49,8 +49,6 @@ console.log(JSON.parse(JSON.stringify(customers)));
 
 
 
-console.log("After updating customer information:");
-console.log(JSON.parse(JSON.stringify(customers)));
 
 // Update one customer's email
 let alberto =customers.find(customer => customer.name === "Alberto Santiago");
@@ -60,6 +58,10 @@ if (alberto) {
 // Add a new purchase to a customer's purchase history
 
 if(alberto) {alberto.purchases.push("Office Chair");}
+
+console.log("After updating customer information:");
+console.log(JSON.parse(JSON.stringify(customers)));
+
 
 // Display customer information
 console.log("Customer Summary:");
