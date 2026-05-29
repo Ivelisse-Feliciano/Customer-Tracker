@@ -25,9 +25,9 @@ let customers = [
   }
 ];
 
-let OriginalCustomers = customers;
+// let OriginalCustomers = customers;
 console.log("Original Customers:");
-console.log(OriginalCustomers);
+console.log(Customers);
 
 // Add a new customer
 let newCustomer = {
@@ -42,6 +42,7 @@ console.log(customers);
 // // Remove the first customer
 let removedCustomer = customers.shift(); 
 console.log(`After removing the first customer: ${removedCustomer.name}`);
+console.log("Customers after removal:");
 console.log(customers);
 
 
