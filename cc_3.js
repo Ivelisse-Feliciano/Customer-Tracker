@@ -33,7 +33,7 @@ console.log(...customers);
 let removedCustomer = customers.shift(); 
 console.log(`After removing the first customer: ${removedCustomer.name}`);
 console.log("Customers after removal:");
-console.log(customers);
+console.log(JSON.parse(JSON.stringify(customers)));
 
 
 // Add a new customer
@@ -45,14 +45,14 @@ let newCustomer = {
 
 customers.push(newCustomer);
 console.log("After adding a new customer:");
-console.log(customers);
+console.log(JSON.parse(JSON.stringify(customers)));
 
 
 // Add a new purchase to a customer's purchase history
 // customers[1].purchases.push("Office Chair");
 
 console.log("After updating customer information:");
-console.log(customers);
+console.log(JSON.parse(JSON.stringify(customers)));
 
 // Update one customer's email
 let alberto =customers.find(customer => customer.name === "Alberto Santiago");
