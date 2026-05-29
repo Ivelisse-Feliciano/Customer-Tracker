@@ -66,7 +66,7 @@ if (alberto) {
 if(alberto) {alberto.purchases.push("Office Chair");}
 
 // Display updated customer email and purchases
-console.log("After updating customer information:");
+console.log("After updating customer email and purchases:");
 console.log(JSON.parse(JSON.stringify(customers)));
 
 
