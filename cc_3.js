@@ -26,15 +26,7 @@ let customers = [
 ];
 
 console.log("Original Customers:");
-console.log(...customers);
-
-
-// // Remove the first customer
-let removedCustomer = customers.shift(); 
-console.log(`After removing the first customer: ${removedCustomer.name}`);
-console.log("Customers after removal:");
 console.log(JSON.parse(JSON.stringify(customers)));
-
 
 // Add a new customer
 let newCustomer = {
@@ -46,6 +38,20 @@ let newCustomer = {
 customers.push(newCustomer);
 console.log("After adding a new customer:");
 console.log(JSON.parse(JSON.stringify(customers)));
+
+
+
+
+
+
+// // Remove the first customer
+let removedCustomer = customers.shift(); 
+console.log(`After removing the first customer: ${removedCustomer.name}`);
+console.log("Customers after removal:");
+console.log(JSON.parse(JSON.stringify(customers)));
+
+
+
 
 
 
