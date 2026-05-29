@@ -1,6 +1,6 @@
 // Customer Records Tracker
 
-
+//CREATE an array of customer objects, each with properties: name, email, and purchases (an array of items they have bought).
 
 let customers = [
   {
@@ -48,8 +48,6 @@ console.log("After adding a new customer:");
 console.log(JSON.parse(JSON.stringify(customers)));
 
 
-// Add a new purchase to a customer's purchase history
-// customers[1].purchases.push("Office Chair");
 
 console.log("After updating customer information:");
 console.log(JSON.parse(JSON.stringify(customers)));
@@ -59,6 +57,7 @@ let alberto =customers.find(customer => customer.name === "Alberto Santiago");
 if (alberto) {
   alberto.email = "alberto.newemail@gmail.com";
 }
+// Add a new purchase to a customer's purchase history
 
 if(alberto) {alberto.purchases.push("Office Chair");}
 
