@@ -1,2 +1,2 @@
 ## Customer Tracker
-//Code Challenge #3//
+Code Challenge #3
