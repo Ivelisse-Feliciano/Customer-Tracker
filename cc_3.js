@@ -1,6 +1,7 @@
 // Customer Records Tracker
 
 
+
 let customers = [
   {
     name: "Ivelisse Feliciano",
@@ -12,6 +13,11 @@ let customers = [
     email: "alberto.santiago@gmail.com",
     purchases: ["Laptop Bag", "Mouse"]
   },
+   {
+    name: "Anna Hernandez",
+    email: "anna.hernandez@gmail.com",
+    purchases: ["Notebook", "Laptop"]
+  },
   {
     name: "Kimberleen Lozada",
     email: "kimberleen.lozada@gmail.com",
@@ -19,24 +25,25 @@ let customers = [
   }
 ];
 
+let OriginalCustomers = customers;
 console.log("Original Customers:");
-console.log(customers);
+console.log(OriginalCustomers);
 
 // Add a new customer
-customers.push({
+let newCustomer = {
   name: "Jeniffer Maldonado",
   email: "jeniffer.maldonado@gmail.com",
   purchases: ["Keyboard", "USB Drive"]
-});
-
+};
+customers.push(newCustomer);
 console.log("After adding a new customer:");
 console.log(customers);
 
-// Remove the first customer
-customers.shift();
-
-console.log("After removing the first customer:");
+// // Remove the first customer
+let removedCustomer = customers.shift(); 
+console.log(`After removing the first customer: ${removedCustomer.name}`);
 console.log(customers);
+
 
 // Update one customer's email
 customers[0].email = "alberto.newemail@gmail.com";
